@@ -1,0 +1,173 @@
+        .sub_nav_white > a{
+            color: white;
+        }
+        header{
+            margin: 0 auto;
+            background-image: url(images/sub2.png);
+            height: 432px;
+            background-repeat: no-repeat;
+        }
+          .sub_nav_white > a{
+            color: white;
+        }
+        h2{
+            color: #a3cc45;
+        }
+        #content1 > article > img{
+            margin-left: auto;
+            margin-right: auto;
+            margin: 0 auto;
+            width: 1200px;
+
+        }
+        .content{
+            margin: 0 auto;
+        }
+        #content1{
+/*            align-content: center;*/
+            margin: 0 auto;
+            width: 1200px;
+        }
+        #content1 > .content{
+            position: relative;
+            width: 1200px;
+            height: 150px;
+        }
+        #content_menu{
+            width: 18%;
+            text-align: center;
+            margin-top: 50px;
+            margin-left: 19px;
+            padding: 8px;
+            font-size: 13px;
+            height: 50px;
+            float: left;
+        }
+        #content1 h3{
+            color: #4b4747;
+            padding: 7px;
+        }
+        .menu0, .menu1, .menu2, .menu3, .menu4{
+            border: 1px solid black;
+
+        }
+      .menu0{
+            background: #a3cc45;
+        }
+
+
+        #content_menu:hover{
+            background: #4b4747;
+            color: white;
+        }
+        #content_menu h3:hover{
+            background: #4b4747;
+            color: white;
+        }
+
+
+        #content_menu li{
+            float: left;
+            margin-left: 50px;
+        }
+        .section{
+            max-width: 1230px;
+            margin: 0 auto;
+            padding: 0;
+            clear: both;
+            margin-bottom: 100px;
+        }
+        .coffee1:hover{
+
+        }
+        .box{
+            margin-top: 60px;
+            text-align: center;
+        }
+        #button{
+            width: 50px;
+            height: 30px;
+            background: white;
+            border: 1px solid #dedcdc;
+        }
+        .click{
+            font-size: 1.6em;
+            font-weight: 600
+        }
+
+         ol, ul {list-style: none; padding:0;}
+        .menu_list {overflow:Hidden;}
+        .menu_list li {
+            float:left;
+            width:300px; height:300px;
+            text-align:center;
+        }
+        .menu_list li a {
+            position:relative;
+            display:block;
+            width:100%; height:100%;
+        }
+        .menu_list a img {
+            max-width:100%;
+        }
+        .menu_list a div{
+            position:Absolute; 
+            left:0; right:0; bottom:0; top:0;
+            opacity:0;
+            filter:alpha(opacity=0);
+            -ms-filter:alpha("opacity=0");
+
+            transition:all 0.3s ease-in;
+            -webkit-transition:all 0.3s ease-in;
+            -moz-transition:all 0.3s ease-in;
+            -o-transition:all 0.3s ease-in;
+
+            background-color:rgba(248, 8, 147, 0.33);
+        }
+        .menu_list a:hover div {
+            opacity:1;
+            filter:alpha(opacity=100);
+            -ms-filter:alpha("opacity=100");
+        }
+        .menu_list a div .tit {
+            color:#fff;
+            margin-top: 20px;
+            font-size: 3em;
+            font-weight: bold;
+        }
+        .menu_list a div .info {
+            color:#fff;
+            padding-bottom: 20px;
+            margin-top: -23px;
+            font-size: 2em;
+            font-weight: bolder;
+            line-height: 50px;
+        }
+        
+        
+        .menu_list a:hover div .tit{
+/*            margin-top: 10px;*/
+            animation-name: rotate;
+            animation-duration: 0.8s;
+        }
+        @keyframes rotate {
+            from{
+                transform: rotate(0deg)
+            }
+            to{
+                transform: rotate(360deg)
+            }
+            
+        }
+        .menu_list a:hover div .info{
+            color: #ffffff;
+            padding-bottom: 20px;
+            margin-top: -23px;
+            font-size: 2em;
+            font-weight: bolder;
+            line-height: 50px;
+        }
+        .menu_list a:hover div .info span{
+            border: 3px solid #fff;
+            padding: 0px 20px;
+        }

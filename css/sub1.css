@@ -1,0 +1,75 @@
+/************sub1style*************/
+ .sub_nav_white > a{
+            color: white;
+        }
+.menu0{
+            background: #a3cc45;
+        }
+#content_menu{
+            width: 18%;
+            text-align: center;
+            margin-top: 50px;
+            margin-left: 19px;
+            padding: 8px;
+            font-size: 13px;
+            height: 50px;
+            float: left;
+        }
+        #content2 .content{
+            margin-left: 190px;
+            line-height: normal;
+        }
+        #content2 h3{
+            color: #4b4747;
+            padding: 7px;
+        }
+        .menu0, .menu1, .menu2, .menu3, .menu4{
+            border: 1px solid black;
+            
+        }
+        
+        #content_menu:hover{
+            background: #4b4747;
+            color: white;
+        }
+        #content_menu h3:hover{
+            background: #4b4747;
+            color: white;
+        }
+        .menu0{
+            background: #a3cc45;
+        }
+
+/*        submenu끝*/
+
+
+        #content1 > article > img{
+            margin-left: auto;
+            margin-right: auto;
+            margin: 0 auto;
+            
+        }
+/*
+        #title{
+            margin-top: 20px;
+            height: 60px;
+            color: #fff;
+            background-color: #a3cc45;
+            text-align: center;
+        }
+*/
+        #content1{
+/*            align-content: center;*/
+            margin: 0 auto;
+            width: 1200px;
+        }
+        #content1 article:first-of-type{
+            margin-top: 100px;
+        }
+        #content1 article{
+            padding-top: 50px;
+        }
+        #content1 article h2{
+            color: #a3cc45;
+            font-size: 25px;
+        }

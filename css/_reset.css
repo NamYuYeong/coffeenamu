@@ -1,0 +1,85 @@
+
+/* HTML5 display-role reset for older browsers */
+#wrapper article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+   display: block;
+}
+
+#wrapper ol, ul {
+   list-style: none;
+}
+#wrapper blockquote, q {
+   quotes: none;
+}
+#wrapper blockquote:before, blockquote:after,
+q:before, q:after {
+   content: '';
+   content: none;
+}
+#wrapper table {
+   border-collapse: collapse;
+   border-spacing: 0;
+}
+#wrapper a:link, a:visited, a:hover, a:active {text-decoration:none;}
+#wrapper #menu-controls {
+    width:720px; height:65px; 
+    margin: 0 auto;
+/*    margin-left: 220px; */
+/*    padding:20px 70px 20px 30px;*/
+    text-align:center; 
+    border:1px solid #eee; 
+    font-size: 17px;
+}
+#wrapper #menu-controls a {  
+    margin: 20px; 
+    color:#741a1a; 
+    outline:none;
+    vertical-align: middle;
+}
+#wrapper #menu-controls a.active {font-weight:bold;}
+#wrapper .options {
+    position: relative;
+    bottom: 40px;
+/*    width: 50px;*/
+}
+#wrapper .options a{
+        color: black; font-size: 16px;
+    }
+#wrapper .options span {font-size:15px;font-weight:bold; color: red;}
+#wrapper .options #auto{
+    width: inherit; 
+/*    margin-bottom: 90px; */
+/*    margin-left: 460px; */
+    margin-top: 20px;
+    text-align: center;}
+   
+#wrapper #loading{
+    position:absolute;
+    width:31px;
+    height:31px;
+    top:50px;
+    left:370px;
+   }
+#wrapper #menu-container {
+      position:relative; /* REQUIRED */
+      width: 600px;
+      height:320px;
+    padding-top: 10px;
+      margin:10px auto 0;
+      overflow:hidden; /* REQUIRED */
+   }
+#wrapper #menu-container ul {
+      list-style-type:none; /* REQUIRED */
+      position:absolute; /* REQUIRED */
+      right: 10px; /* REQUIRED */
+   }
+#wrapper #menu-container ul li {
+      position:absolute; /* REQUIRED */
+      width:100px; /* Size of menu list item, or 'cell' */
+      height:100px; /* Size of menu list item, or 'cell' */
+        margin: 0 auto;
+}
+#wrapper #menu-container ul li img{
+        width: 220px;
+        padding-right: 60px;
+    }
