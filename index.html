@@ -8,19 +8,17 @@
    <meta name="description" content="커피 프랜차이즈, 커피, 로스팅, 카페, 스페셜커피">
    <title>Coffee namu 홈페이지</title>
    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic" rel="stylesheet">
+   <!-- bxslider css -->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
    <link rel="stylesheet" href="css/style.css">
    <link rel="stylesheet" href="css/_reset.css">
-   <link rel="stylesheet" type="text/css" href="css/style.css" />
-		<script src="js/modernizr.custom.63321.js"></script>
-		
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
    <!-- bxslider 플러그인 -->
-   <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
    <!-- 사용자 자바스크립트 -->
+   <script src="js/jquery.animation.easing.js"></script>
+    <script src="js/slideMenu.min.js"></script>
    <script src='js/script.js'></script>
-  
 </head>
 <body>
     <header id="main_header">
@@ -102,13 +100,63 @@
         </li>
         </ul>
         
+        
+        
         </div>
-        
-        
            <div id="menu-container">
             <h1>COFFEE NAMU MENU</h1>
             <h2>커피나무 베스트 메뉴를 소개합니다</h2>
-    </div>
+            <ul>
+            <li class="img_h">
+               <a href="#">
+               <img src="images/1-3.png" alt="큐브라떼">
+            <div id="hover">
+                <p class="m_go">
+                메뉴더보기
+                <br>
+                <span>&gt;</span>
+                </p> 
+            </div>
+            </a>
+            </li>
+            <li>
+            <a href="#">
+            <img class="img_h" src="images/2-4.png" alt="큐브라떼">
+            <div id="hover">
+                <p class="m_go">
+                메뉴더보기
+                <br>
+                <span>&gt;</span>
+                </p> 
+            </div>
+            </a>
+            </li>
+            <li>
+            <a href="#">
+            <img class="img_h" src="images/3-3.png" alt="큐브라떼">
+            <br>
+            <div id="hover">
+                <p class="m_go">
+                메뉴더보기
+                <br>
+                <span>&gt;</span>
+                </p> 
+            </div>
+            </a>
+            </li>
+            <li>
+            <a href="#">
+            <img class="img_h" src="images/4-1.png" alt="큐브라떼">
+            <div id="hover">
+               <p class="m_go">메뉴더보기
+               <br>
+               <span>&gt;</span>
+               </p> 
+            </div>
+            </a>
+            </li>
+            </ul>
+        </div>
     </div>
     </div>
    
@@ -131,16 +179,18 @@
                <img src="images/instar.png"  alt="instar" class="sns_logo">
            </li>
        </ul>
-   </footer>   
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-		<script src="js/jquery.catslider.js"></script>
-      <script>
-			$(function() {
-
-				$( '#mi-slider' ).catslider();
-
-			});
-		</script>
-		   
+   </footer>      
+<script>
+     $(function(){
+           //하위 메뉴 닫기
+            $('#hover').mouseover(
+                function(){
+                    $('.m_go')
+                        .fadein(200);
+                }
+            );
+            
+        });
+    </script>
 </body>
 </html>
