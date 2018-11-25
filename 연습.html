@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="js/jquery-1.7.1.min.js"></script>
+    <script src="js/jquery-2.1.1.min.js"></script>
+    <script src="js/jquery.als-1.7.js"></script>
+    <script src="js/jquery.als-1.7.min.js"></script>
+    <style>
+.als-container {
+	position: relative;
+	width: 100%;
+	margin: 0px auto;
+	z-index: 0;
+}
+
+.als-viewport {
+	position: relative;
+	overflow: hidden;
+	margin: 0px auto;
+}
+
+.als-wrapper {
+	position: relative;
+	list-style: none;
+}
+
+.als-item {
+	position: relative;
+	display: block;
+	text-align: center;
+	cursor: pointer;
+	float: left;
+}
+
+.als-prev, .als-next {
+	position: absolute;
+	cursor: pointer;
+	clear: both;
+}
+/*************************************
+ * specific styling for #demo3
+ ************************************/
+
+#demo3 {
+	margin: 40px auto;
+}
+
+#demo3 .als-item {
+	margin: 0px 5px;
+	padding: 4px 0px;
+	min-height: 120px;
+	min-width: 100px;
+	text-align: center;
+}
+
+#demo3 .als-item img {
+	display: block;
+	margin: 0 auto;
+	vertical-align: middle;
+}
+
+#demo3 .als-prev, #demo3 .als-next {
+	top: 40px;
+}
+
+#demo3 .als-prev {
+	left: 200px;
+}
+
+#demo3 .als-next {
+	right: 200px;
+}
+    </style>
+</head>
+<body>
+    <div class="als-container" id="demo3">
+  <span class="als-prev"><img src="images/thin_left_arrow_333.png" alt="prev" title="previous" /></span>
+  <div class="als-viewport">
+    <ul class="als-wrapper">
+     <li class="als-item"><a href="#"><img src="images/1-1.png" /></a> </li>
+      <li class="als-item"><a href="#"><img src="images/1-2.png" /></a></li>
+      <li class="als-item"><a href="#"><img src="images/1-3.png" /></a></li>
+      <li class="als-item"><a href="#"><img src="images/1-4.png" /></a></li>
+      <li class="als-item"><a href="#"><img src="images/2-1.png" /></a></li>
+      <li class="als-item"><a href="#"><img src="images/2-2.png" /></a></li>
+      <li class="als-item"><a href="#"><img src="images/2-3.png" /></a></li>
+      <li class="als-item"> <a href="#"><img src="images/2-4.png" /></a></li>
+      <li class="als-item"> <a href="#"><img src="images/3-1.png" /></a></li>
+      <li class="als-item"> <a href="#"><img src="images/3-2.png" /></a></li>
+      <li class="als-item"> <a href="#"><img src="images/3-3.png" /></a></li>
+      <li class="als-item"> <a href="#"><img src="images/3-4.png" /></a></li>
+     
+    </ul>
+  </div>
+  <span class="als-next"><img src="images/thin_right_arrow_333.png" alt="next" title="next" /></span>
+</div>
+
+
+<script>
+    $("#demo3").als({
+	visible_items: 4,
+	scrolling_items: 2,
+	orientation: "horizontal",
+	circular: "yes",
+	autoscroll: "yes",
+	interval: 4000
+});
+    </script>
+</body>
+</html>
